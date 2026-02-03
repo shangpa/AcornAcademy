@@ -144,6 +144,9 @@ footer{
   nav{
     display: none;
   }
+  nav ul{
+    display: none;
+  }
 }
 
 /* PC 1024 이상일때 */

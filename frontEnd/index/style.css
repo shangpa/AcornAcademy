@@ -16,7 +16,7 @@ main{
     padding-right: 20px;
 } 
 .sec-tit{
-    background-color: lightblue;
+    background-color: #999;
     font-size: 42px;
     font-weight: 600;
     margin-bottom: 30px;
@@ -40,6 +40,7 @@ header{
     margin-left: 1rem;
 }
 nav{
+    display: none;
     background-color: #333;
     opacity: 0.9;
 }
@@ -147,6 +148,8 @@ footer{
   nav ul{
     display: none;
   }
+  
+  
 }
 
 /* PC 1024 이상일때 */
@@ -159,7 +162,6 @@ footer{
     nav{
         display: block;
         background:none;
-        
     }
     nav ul{
         display: flex;

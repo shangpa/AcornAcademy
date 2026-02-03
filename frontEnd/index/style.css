@@ -141,6 +141,9 @@ footer{
    .work-list li {
         width: calc(50% - 1.5rem);
   }
+  nav{
+    display: none;
+  }
 }
 
 /* PC 1024 이상일때 */

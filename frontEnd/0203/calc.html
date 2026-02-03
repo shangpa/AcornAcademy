@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+    <style>
+        .container{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 30px; 
+            /* 간격 */
+        }
+        .item{
+            background-color: #ff9644;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: wheat;
+            font-weight: bold;
+        }
+        .item{
+            /* 기본 pc 3단배열 */
+            width: calc(33.33% - 20px);
+        }
+        /* 768이하이면 */
+        @media (max-width:768px) {
+            .item{
+                width: calc(50% - 15px);
+                background-color: aqua;
+            }
+        }
+        /* 작은화면 모바일 320px 이하 */
+        @media (max-width:320px) {
+            .item{
+                width: calc(100%);
+                background-color: yellowgreen;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+    </div>
+</body>
+</html>

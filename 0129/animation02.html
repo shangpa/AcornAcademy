@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+        }
+        section{
+            background:url(../images/whale.jpg);
+            height: 900px;
+            width: 100%;
+        }
+        .firPart span{
+            color: aliceblue;
+            font-size: 50px;
+            position: absolute;
+            top: 52%;
+            right: 5%;
+            animation: moveIn 3s alternate infinite;
+        }
+        .firPart p{
+            color: aliceblue;
+            font-size: 50px;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            animation: moveOut 5s ease-out alternate infinite;
+        }
+        @keyframes moveIn {
+            from{
+                right: -10%;
+            }to{
+                right: 5%;
+            }
+        }
+        @keyframes moveOut {
+            from{
+                left: -10%;
+                opacity: 0;
+
+            }to{
+                left: 5%;
+                opacity: 1;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="firPart">
+            <span>pour un logical CRM</span> <br>
+            <p>
+                simple, complet <br>
+                et intuitif
+            </p>
+        </div>
+        <div class="secPart">
+            <p>CRM 소프트웨어를 선택하여
+                간단하고 완전하며 직관적인
+            </p>
+        </div>
+    
+    </section>
+</body>
+</html>

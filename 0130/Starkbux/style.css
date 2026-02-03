@@ -1,0 +1,150 @@
+body{
+    margin:0;
+    height: 2000px;
+}
+section{
+    background: url(https://image.istarbucks.co.kr/upload/common/img/main/2025/2026_new_year_promotion_bg_251226.jpg);
+    height: 578px;
+    margin-top: 100px;
+}
+.photo{
+    position: absolute;
+    top: 90px;
+    left: -30%;
+    /* animation: photo 3s ease-out infinite alternate; */
+} 
+.word{
+    height: 100%;
+    color: aliceblue;
+    position: absolute;
+    font-size: 5rem;
+    width: 256px;
+    position: absolute;
+    top:200px;
+    right: -30%;
+}
+/* 
+@keyframes photo {
+    from{
+        left:-25%;
+        opacity: 0.5;
+    }to{
+        left:25%;
+        opacity: 2;
+    }
+} */
+
+    @keyframes photoIn {
+        from{
+            left: -30%;
+            opacity: 0;
+        }
+        to{
+            left: 25%;
+            opacity: 1;
+        }
+    }
+    @keyframes photoOut {
+        from{
+            left: 25%;
+            opacity: 1;
+        }
+        to{
+            left: -30%;
+            opacity: 0;
+        }
+    }
+
+     @keyframes wordIn {
+        from{
+            right: -30%;
+            opacity: 0;
+        }
+        to{
+            right: 25%;
+            opacity: 1;
+        }
+    }
+    @keyframes wordOut {
+        from{
+            right: 25%;
+            opacity: 1;
+        }
+        to{
+            right: -30%;
+            opacity: 0;
+        }
+    }
+/* 2번째 섹션 */
+.section2{
+    background: url(https://image.istarbucks.co.kr/upload/common/img/main/2025/2026_new_year_pick_bg_251226.jpg);
+    height: 578px;
+    margin-top: 100px;
+    position: relative;
+    /* position: relative 부모기준으로 자식기준을 만듦 */
+}
+.cake{
+    width: 615px;
+    position: absolute;
+    /*  position: absolute 위치고정 */
+    top:100px;
+    right: -40%;
+    animation: cake 1s ease-in-out infinite alternate ;
+}
+.pick{
+    height: 100%;
+    color: aliceblue;
+    font-size: 5rem;
+    width: 256px;
+    position: absolute;
+    top:100px;
+    left: -25%;
+}
+/* 
+@keyframes cake {
+    from{
+        right: -20px;
+    }
+    to{
+        right: 50px;
+    }
+    
+} */
+
+@keyframes cakeIn {
+    from{
+        right: -40%;
+        opacity: 0;
+    }
+    to{
+        right: 50px;
+        opacity: 1;
+    }
+}
+@keyframes cakeOut {
+    from{
+        right: 50px;
+        opacity: 1;
+    }
+    to{
+        right: -40%;
+        opacity: 0;
+    }
+}
+@keyframes pick {
+    from{
+        left: -25%;
+    }
+    to{
+        left: 25%;
+    }
+    
+}
+@keyframes unPick{
+    from{
+        left: 25%;
+    }
+    to{
+        left: -25%;
+    }
+}

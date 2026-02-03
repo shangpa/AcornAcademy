@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .origin{
+            background-color: bisque;
+            perspective: 200px;
+            border: 1px solid;
+            width: 300px;
+            height: 200px;
+            margin: 50px;
+        }
+        .rotateX{
+            transform: rotateX(45deg);
+            /* x 축 기준으로 시계방향으로 45도 회전 */
+        }
+        .rotateY{
+            transform: rotateY(45deg);
+            /* y 축 기준으로 시계방향으로 45도 회전 */
+        }
+        .rotateZ{
+            transform: rotateZ(45deg);
+            /* z 축 기준으로 시계방향으로 45도 회전 */
+        }
+        .rotateXYZ{
+            transform: rotate3d(2.5,1.2,-1.5,45deg);
+            /* xyz 축 기준으로 시계방향으로 45도 회전 */
+        }
+    </style>
+</head>
+<body>
+    <h2>이미지 3차원 회전하기
+        <div class="origin">
+            <div class="rotateX">
+                <img src="../images/banana.jpg" width="300" alt="">
+            </div>
+        </div>
+        <div class="origin">
+            <div class="rotateY">
+                <img src="../images/banana.jpg" width="300" alt="">
+            </div>
+        </div>
+        <div class="origin">
+            <div class="rotateZ">
+                <img src="../images/banana.jpg" width="300" alt="">
+            </div>
+        </div>
+        <div class="origin">
+            <div class="rotateXYZ">
+                <img src="../images/banana.jpg" width="300" alt="">
+            </div>
+        </div>
+    </h2>
+</body>
+</html>

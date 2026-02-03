@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Pretendard", sans-serif;
+      }
+      section {
+        margin-top: 50px;
+      }
+      body {
+        background: #b6001f;
+      }
+
+      .banner {
+        width: 100%;
+        height: auto;
+        padding: 80px 10%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 50px;
+      }
+
+      /* 왼쪽 이미지 영역 (3) */
+      .banner-img {
+        flex: 3;
+        display: flex;
+        justify-content: center;
+      }
+
+      .banner-img img {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        animation: imgMove 2s ease-in-out infinite alternate;
+      }
+
+      /* 오른쪽 텍스트 영역 (7) */
+      .banner-text {
+        flex: 7;
+        color: white;
+        animation: textMove 2.5s ease-in-out infinite alternate;
+      }
+
+      @keyframes imgMove {
+        from {
+          transform: translate(-400px);
+        }
+        to {
+          transform: translateX(0px);
+        }
+      }
+
+      @keyframes textMove {
+        from {
+          transform: translateX(900px);
+        }
+        to {
+          transform: translateX(0px);
+        }
+      }
+
+      /* 반응형 */
+      @media (max-width: 768px) {
+        .banner {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .banner-img {
+          flex: none;
+          margin-bottom: 30px;
+        }
+
+        .banner-text {
+          flex: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="banner">
+      <div class="banner-img">
+        <img src="../images/coffe.png" alt="커피 원두" />
+      </div>
+      <div class="banner-text">
+        <h4>NOTES OF JUJUBE & VIBRANT HERBS</h4>
+        <h2>루나 뉴이어 블렌드</h2>
+        <p>
+          대추와 허브의 깊은 풍미에 달콤한 시럽 피니시, 풍부한 바디감으로 설날의
+          따뜻함을 담은 시즌 한정 원두입니다.
+        </p>
+        <button>자세히 보기</button>
+      </div>
+    </section>
+  </body>
+</html>

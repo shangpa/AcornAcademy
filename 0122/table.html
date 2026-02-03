@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표만들기</title>
+</head>
+<body>
+    <table border="1">
+        <caption>색깔의 종류</caption>
+        <thead>
+            <tr>
+                <th>종류</th> <th colspan="2" style="background-color: yellowgreen;">밝은 계열</th><th>어두운계열</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td> <td>빨강</td><td>분홍</td><td>적록</td>
+            </tr>
+            <tr>
+                <td>2</td><td>파랑</td><td rowspan="2" style="background-color: lightblue;">하늘</td><td>남색</td>
+            </tr>
+            <tr>
+                <td>3</td><td>초록</td><td>암녹</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>합계</td><td>3</td><td>3</td><td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- 
+        table 표 전체를 담는 컨테이너
+        caption 표의 제목
+        thead 헤딩 셀 그룹
+        tbody 데이터 셀 그룹
+        tfoot 바닥 셀 그룹
+        tr  행, 여러 개의 td, th 포함
+        th  제목(헤딩) 셀: 두꺼운 글꼴
+        td  데이터 셀 (칸)
+    -->
+
+    <h3>표에 이미지 태그 삽입</h3>
+    <table border="1">
+        <caption> 좋아하는 과일</caption>
+        <tr>
+            <td>내용1 <img src="images/apple.webp" width="30px"></td>
+            <td>내용2<img src="images/banana.jpg" width="30px"></td>
+            <td>내용3<img src="images/orange.jpg" width="30px"></td>
+        </tr>
+    </table>
+
+    
+
+</body>
+</html>

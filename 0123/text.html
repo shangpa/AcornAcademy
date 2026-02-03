@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>블록요소 예제</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Serif+KR:wght@200..900&display=swap');
+      .body,div{
+          font-family: "Nanum Pen Scirpt",cursive;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 20px;
+      }
+      .container{
+          border : 1px solid red;
+          width: 550px;
+      }
+      span{
+          color: blue;
+      }
+      h2{
+        text-align: center;
+      }
+      p::first-letter{
+        color: red;
+      }
+      .title{
+          background-color: pink;
+      }
+      .sum{
+          color: aquamarine;
+      }
+      .snow{
+          background-color: yellowgreen;
+      }
+      a{text-decoration: none;}
+      a:hover{background-color: yellowgreen; color: red; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span class="title">[날씨] 내일 아침 쌀쌀,</span>
+      <p class="sum">
+        한낮 포근... 내륙 짙은 안개<span> "일요일까지 -10도 강추위 계속"</span>
+      </p>
+      <p>
+        오늘도 추움 한파의 절정은 지나갔지만, 일요일까지도 서울 기온이 영하
+        10도를 밑으로 떨어지나요 오늘 오후에는 호남과 제주도에<span class="snow" >다시 눈이나 비가</span>
+        내리겠습니다 취재기자 연결해 자세한 날씨 상황과 전망 짚어보겠습니다."
+        <span>김민경 기자</span> ,추위가 언제쯤 추위가 누그러질까요
+      </p>
+      <a href="#">링크가 있는 내용</a>
+    </div>
+  </body>
+</html>

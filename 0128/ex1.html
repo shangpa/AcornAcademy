@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Pen+Script&family=Noto+Serif+KR:wght@200..900&display=swap');
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        body{
+            font-family: 'Nanum Pen Script';
+            background-color: beige;
+        }
+        .section {
+        width: 100%;
+        padding: 80px 0;
+        text-align: center;
+        }
+
+        .section h1 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 60px;
+        color: #1d3557;
+        }
+
+        .card-wrap {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        }
+
+        .card {
+        width: 320px;
+        height: 420px;
+        background: white;
+        border-radius: 20px;
+        padding: 40px;
+
+        transition: 0.5s;
+        }
+
+        .card:hover {
+        transform: translateY(-15px);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px;
+        }
+
+        .card h2 {
+        font-size: 24px;
+        font-weight: 700;
+        }
+
+        .card p {
+        font-size: 15px;
+        color: gray;
+        margin-bottom: 40px;
+        }
+
+        .highlight {
+        font-size: 30px;
+        font-weight: 700;
+        color: #0056ff;
+        margin-bottom: 40px;
+        }
+
+        .card img {
+        width: 180px;
+        margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+    <h1>국민과 함께 성장하는 글로벌 주택금융 리더</h1>
+
+    <div class="card-wrap">
+
+      <div class="card">
+        <h2>아낌e-보금자리론</h2>
+        <p>0.1%p 더 저렴한 금리</p>
+        <div class="highlight">주택가격 6억원</div>
+        <img src="../images/house1.png" alt="">
+      </div>
+
+      <div class="card">
+        <h2>u-보금자리론</h2>
+        <p>우리 가족의 소중한 보금자리 마련</p>
+        <div class="highlight">대출한도 3.6억원</div>
+        <img src="../images/house2.png" alt="">
+      </div>
+
+      <div class="card">
+        <h2>내집마련 디딤돌</h2>
+        <p>무주택 세대주 대상</p>
+        <div class="highlight">저금리 주택구입자금</div>
+        <img src="../images/house3.png" alt="">
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

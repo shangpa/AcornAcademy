@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/4ec79785b5.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        nav{
+            background-color: lightblue;
+            display: flex;
+            justify-self: space-around;
+            height: 70px;
+            align-items: center;
+            padding-top: 15px;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+        }
+        li{
+            padding: 0 15px;
+        }
+        a{
+            text-decoration: none;
+            color: gray;
+            font-weight: 800;
+        }
+        .appo{
+            padding:0 5px;
+        }
+        a:hover{
+            background-color: blue;
+            color:aliceblue;
+            cursor: pointer;
+            border-radius: 7px;
+        }
+        @media screen and (max-width:768px) {
+            nav{
+                height: 170px;
+                align-items: flex-start;
+            }
+            .navbar ul{
+                flex-direction: column;
+            }
+            .navbar ul li{
+                line-height:2;
+            }
+            .appo, .fa-music{
+                display: none;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1> &amp;  &copy; <i class="fa-solid fa-music"></i> LOGO  </h1>
+            <!-- 엔티티 코드 -->
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                    <a href="#">Page</a>
+                    <a href="#">Blog</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="icons">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-music"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-android"></i></a></li>
+                <li class="appo">Appointment</li>
+        </div>
+    </nav>
+</body>
+</html>

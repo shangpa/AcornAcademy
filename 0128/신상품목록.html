@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container{
+            border:solid 1px lightgray;
+
+        }
+        
+        .prod-list li{
+            list-style: none;
+            padding: 0;
+            margin: 10px;
+            position: relative;
+            /* 부모요소에 해주면 position : absolute 적 */
+        }
+        .prod-list .caption{
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 300px;
+            height: 200px;
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+            z-index: 10;
+            /* 상위 레이어 개념 (숫자가 높을수록 상위)
+            다른 요소보다 위로 올라옴 */
+            top: 200px;
+            position: absolute; /* 부모기준으로 적용*/
+
+        }
+        .prod-list {
+            display: flex;
+        }
+        .prod-list img{
+            width: 300px;
+            height: 200px;
+        }
+        
+        .caption{
+            color: #fff;
+            text-align: center;
+        }
+        .prod-list li:hover .caption{
+            opacity: 1;
+            transform: translateY(-200px);
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>신상품 목록</h1>
+        <ul class="prod-list">
+            <li>
+                <img src="../images/snow.jpg" alt="상품1">
+                <div class="caption">
+                    <h2>상품 1</h2>
+                    <p>상품 설명을 써주세요 </p>
+                    <p>가격: 12,400</p>
+                </div>
+            </li>
+
+            <li>
+                <img src="../images/person.png" alt="상품1">
+                <div class="caption">
+                    <h2>상품 2</h2>
+                    <p>상품 설명을 써주세요 </p>
+                    <p>가격: 13,400</p>
+                </div>
+            </li>
+
+            <li>
+                <img src="../images/whale.jpg" alt="상품1">
+                <div class="caption">
+                    <h2>상품 3</h2>
+                    <p>상품 설명을 써주세요 </p>
+                    <p>가격: 15,400</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

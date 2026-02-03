@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .dropdown-content{
+        margin:0;
+        background-color: lightblue;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease, visiblity 0.5s;
+    }
+    .dropdown:hover .dropdown-content{
+        opacity: 1;
+        visibility: visible;
+    }
+    .dropdown-content li a{
+        text-decoration: none;
+        color: gray;
+        display: block;
+        padding: 10px;
+    }
+</style>
+
+</head>
+<body>
+    
+    <div class="dropdown">
+        <span>여기에 마우스를 올려보세요!</span>
+        <div class="dropdown-content">
+            <p>마우스를 올려야 나타나는 툴팁 부분</p>
+        </div>
+    </div>
+</body>
+</html>

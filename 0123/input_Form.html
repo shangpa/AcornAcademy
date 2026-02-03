@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 400px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form >
+    <h3>회원정보입력</h3>
+    <fieldset>
+        <legend>
+            로그인 정보
+        </legend>
+
+            <label id="user_id">아이디</label>
+            <input type="text" id="user_id"><br>
+            <label id="user_pw">비밀번호</label>
+            <input type="password" id="user_pw">
+            <input type="submit" value="로그인">
+    </fieldset>
+    <fieldset>
+        <legend>추가 정보</legend>
+        <label for="email_ad">메일주소</label> <input type="email" id="email_ad" placeholder="asd@naver.com">
+        <br>
+        메일 수신
+        <label for="e_y">
+            <input type="radio" id="yes" name="email_y_n" value="y">메일수신 동의
+        </label>
+        <label for="e_n">
+            <input type="radio" id="no" name="email_y_n" value="n">메일 수신 거부
+        </label>
+        <br>
+        <br>
+
+        연락처 :
+        <input type="phone" placeholder="-를 빼고 입력해주세요">
+        <br>
+        생년월일 :
+        <input type="birth" placeholder="yyyy-mm-dd">
+        <br>
+        취미
+        <label for="read"> <input type="checkbox" id="read" value="h_1">독서</label>
+        <label for="music"> <input type="checkbox" id="music" value="h_2">음악감상</label>
+        <label for="exer"> <input type="checkbox" id="exer" value="h_3">운동</label>
+
+        <br>
+        <br>
+        <label for="path">가입경로</label>
+        <select name="" id="path">
+            <option value="">블로그</option>
+            <option value="">검색</option>
+            <option value="">SNS</option>
+            <option value="">지인추천</option>
+            <option value="">기타</option>
+        </select>
+        <br>
+        <br>
+        <label for="memo">메모</label>
+        <textarea name="" id="" cols="30" rows="3"></textarea>
+    </fieldset>
+    <input type="submit" value="제출">
+    </form>
+</body>
+</html>

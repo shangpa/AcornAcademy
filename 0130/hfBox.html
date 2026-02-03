@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'The Wild Breath of Zelda';
+            src: url('../fonts/TheWildBreathofZelda-Regular.woff2');
+        }
+        body{
+            background-color:rgba(143, 130, 130, 0.363);
+            font-family: 'The Wild Breath of Zelda';
+        }
+        h1{
+            color: rgb(29, 16, 65);
+            font-weight: 100;
+            margin: 50px 0;
+        }
+        section{
+            background-color: white;
+            border-radius: 5px;
+            width: 300px;
+            height: 450px;
+            box-shadow:rgb(121, 120, 120) 0px 7px 30px 0;
+            padding: 25px;
+            margin:15px;
+            cursor: pointer;
+        }
+        section:hover{
+            box-shadow: rgba(0, 0, 0, 0.329) 0px 54px 55px;
+            transform: scaleY(1.05);
+            transition: all 0.3s;
+            transform-origin: 0 100%; 
+            /* 회전 중심점 (x축, y축, z축) */
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+    <h1>국민과 함께 성장하는 <b>글로벌 주택금융 리더</b></h1>
+    <section>
+        <h2>아낌 e-보금자리론</h2>
+        <h3>0.1% 더 저렴한 금리</h3>
+        <aside>
+            <span>최대</span><br>
+             주택가격 6억원
+             <img src="../images/orange.jpg" alt="" width=100px">
+        </aside>
+    </section>
+    
+</body>
+</html>

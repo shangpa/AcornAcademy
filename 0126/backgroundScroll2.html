@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            scroll-behavior: smooth;
+        }
+        
+        h3{
+            font-size: 70px;
+            font-weight: 800;
+            line-height: 300px;
+            text-align: center;
+            color: aliceblue;
+        }
+        section{
+            height: 500px;
+        }
+        .section1{
+            background: url(../images/apple.webp) no-repeat 50% 0 fixed;
+            background-size: cover;
+        }
+        .section2{
+            background: url(../images/banana.jpg)no-repeat 50% 0 fixed;
+            background-size: cover;
+        }
+        .section3{
+            background: url(../images/fruits.jpg)no-repeat 50% 0 fixed;
+            background-size: cover;
+        }
+        .section4{
+            background: url(../images/nature.jpg)no-repeat 50% 0 fixed;
+            background-size: cover;
+        }
+        /* nav */
+        nav{
+            height: 70px;
+            border: solid red 1px;
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            display: inline;
+            border: solid 2px black;
+        }
+        li:hover{
+            background-color: black;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap" id="top">
+        <section class="section1" id="section1">
+            <nav>
+                <ul>
+                    <li><a href="#section2">버튼123</a></li>
+                    <li><a href="#section3">버튼123</a></li>
+                    <li><a href="#section4">버튼123</a></li>
+                </ul>
+            </nav>
+            <h3>web frontend</h3>></section>
+        <section class="section2" id="section2">
+            <h3>web frontend</h3></section>
+        <section class="section3" id="section3">
+            <h3>web frontend</h3></section>
+        <section class="section4" id="section4">
+            <h3>web frontend</h3>
+        <a href="#" class="top">맨 위로</a>
+        </section>
+    </div>
+    
+</body>
+</html>

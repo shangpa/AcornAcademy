@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid salmon;
+            width: 200px;
+            height: 120px;
+        }
+        .box1{
+            border-color: blue;
+            border-width: 5px;
+            border-style: dashed;
+            
+        }
+        .box2{
+            border-width: thick thin;
+            /* 위아래 두껍게 좌우는 가늘게 */
+            border-color: darkseagreen;
+            border-style: double;
+            margin: 15px;
+        }
+        .box3{
+            border-width: 5px 20px 1px;
+            /*  위, 좌우, 아래 */
+        }
+        .box4{
+            border-style: outset;
+            border-width: 10px 7px 6px 2px;
+            /* 시계방향 12시부터 (상,우,하,좌) */
+            border-left-color: pink;
+            border-right-color: blueviolet;
+            border-bottom-color: yellowgreen;
+        }
+        .round1{
+            width: 300px;
+            height: 200px;
+            border-radius: 50px;
+            border-top-left-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+    <div class="box4">박스4</div>
+
+    <div class="round1">첫번째</div>
+    <div class="round2">두번째</div>
+    <div class="round3">3번째</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+<!--    0~1-->
+    let m =prompt("키를 입력하세요")
+    let kg=prompt("몸무게를입력하세요")
+    m=m/100
+    // cm로 변환
+    if(m<=0 | kg<=0){
+        alert("잘못된 입력입니다")
+    }
+    let bmi= kg/(m*m);
+    if(bmi>=25){
+        alert("비만 bmi:"+bmi);
+    }else if(bmi>=23){
+        alert("과체중 bmi:"+bmi);
+    }else if(bmi>=18.5){
+        alert("정상 bmi:"+bmi);
+    }else {
+        alert("저체중 bmi:"+bmi);
+    }
+</script>
+
+</body>
+</html>

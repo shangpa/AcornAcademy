@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let N=parseInt(prompt("숫자 N를 입력"));
+    let even=0,odd=0;
+    for(let i=1; i<=N;i++){
+        if(i%2==0){
+            even=even+i;
+        }else{
+            odd=odd+i;
+        }
+    }
+    document.writeln("짝수의 합 :"+even+"<br>");
+    document.writeln("홀수의 합 :"+odd+"<br>");
+
+</script>
+
+</body>
+</html>

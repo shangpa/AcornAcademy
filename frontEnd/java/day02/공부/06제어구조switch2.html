@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let menu;
+    menu=prompt("메뉴 선택 1.등록, 2.조회, 3.삭제, 4.종료");
+
+    // "1" 1이 두개는 다름
+    // "1" -> 숫자로 변경하기
+    // parseInt(); 함수 문자열을 실제 숫자로 바꿈
+
+    menu = parseInt(menu);
+
+    switch (menu){
+        case 1:
+            alert("등록");
+            break
+        case 2:
+            alert("조회");
+            break
+        case 3:
+            alert("삭제");
+            break
+        case 4:
+            alert("종료");
+            break
+        default:
+           alert("잘못된 접근")
+}
+</script>
+</body>
+</html>

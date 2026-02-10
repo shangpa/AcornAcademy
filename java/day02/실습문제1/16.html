@@ -6,8 +6,15 @@
 </head>
 <body>
 <script>
+    /*
+    지름을 입력 받으면
+    원의 둘레를 출력하는 함수
+    * */
+    function circum(a){
+        return a*Math.PI;
+    }
     let score=parseInt(prompt("지름을 입력"));
-    alert("둘레는"+score*Math.PI/2)
+    alert("둘레는"+circum(score));
 </script>
 
 </body>

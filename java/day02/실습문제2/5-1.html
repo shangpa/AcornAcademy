@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>함수를 이용한 삼각형 출력</title>
+</head>
+<body>
+<script>
+
+    function printNum(n) {
+        // 숫자가 아닌 값이 들어오거나 0 이하일 경우 예외 처리
+        if (isNaN(n) || n <= 0) {
+            document.write("올바른 숫자를 입력해주세요.");
+            return;
+        }
+
+        for (let i = 1; i <= n; i++) {
+            for (let j = 1; j <= i; j++) {
+                document.write(j);
+            }
+            document.write("<br>");
+        }
+    }
+
+    // 사용자로부터 입력 받기
+    let inputN = parseInt(prompt("삼각형 높이 N을 입력하세요"));
+    printNum(inputN);
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    //1. 문제: 아래 과일 배열에서 첫 번째와 세 번째 요소를 출력하세요.
+    const 과일 = ['apple', 'banana', 'cherry'];
+
+    document.write(과일[0]+과일[2]);
+
+    //2. 문제: 아래 배열 컬러 길이를 출력하세요.
+    const 컬러 = ['red', 'blue', 'green', 'yellow'];
+
+    document.write(컬러.length);
+
+    //3. 문제: 아래 배열 점수에 있는 모든 숫자의 합을 계산하세요.
+    const 점수 = [10, 20, 30, 40];
+
+    let sum= 점수[0]+점수[1]+점수[2]+점수[3];
+
+    //4.문제: 아래 이름 배열의 각 요소를 순서대로 출력하세요.
+    const 이름 = ['영숙', '순자','영자','옥순','현숙'];
+    for(let i=0;i<이름.length;i++){
+      document.write(이름[i]);
+    }
+
+    //5. 문제: 아래 numbers 배열에서 숫자 7이 있는지 확인하고, 있으면 true , 아니면 false를 출력하세요.
+    {
+        const  numbers = [2, 4, 6, 8, 10];
+
+
+      function is7(){
+        for(let i=0;i<numbers.length;i++){
+          if(numbers[i]==7){
+            return true;
+          }
+        }
+        return false;
+      }
+    }
+
+    //6. 문제: 아래 numbers 배열에서  가장 큰 수 를 출력하시오
+    {
+      const numbers = [12, 41, 6, 18, 10];
+      let max=numbers[0];
+      numbers.forEach(function (a){
+        if(a>max){
+
+          max=a;
+        }
+        }
+      )
+      document.write(max);
+    }
+
+    //7. 문제: 아래  kors 배열에서  총점과 평균을 출력하시오
+    {
+      const kors = [90, 80, 70, 99, 100];
+      sum=0;
+      kors.forEach(function (a){
+        sum=sum+a;
+              }
+      )
+      let ave=sum/kors.length
+      document.write(ave);
+      //8. 문제: 아래  kors 배열에서   평균보다 높은 점수는 몇개인가 ?
+      let count=0;
+      kors.forEach(function (b){
+          if(b>ave){
+            count++;
+          }
+              }
+      )
+      document.write(count);
+    }
+    //9. 문제: 아래 prices 배열에서 1200보다 큰 숫자만 골라 새로운 배열에 저장하세요.
+    {
+      const prices = [1000, 1500, 900, 1800, 2000, 1200];
+
+      let nPrices=[];
+      prices.forEach(function (a){
+        if(a>1200){
+          nPrices.push(a);
+        }
+      })
+    }
+    //10.  문제: 아래 numbers 배열의 각 요소를 2배로 만든 새로운 배열을 만드세요.
+    {
+      const numbers = [1, 2, 3, 4, 5];
+      let nNumbers=[];
+      numbers.forEach(function (a){
+        nNumbers.push(2*a);
+      })
+    }
+    //11.  문제 :아래  fruits 배열에  자두 포함 여부 true, false 출력하시오
+    {
+      let fruits = ["자두", "복숭아", "포도"];
+      document.write(fruits.includes("자두"));
+    }
+    //12.  문제 :아래  fruits 배열을  거꾸로 출력하시오
+
+    {
+      let fruits = ["자두", "복숭아", "포도"];
+      document.write(fruits.reverse());
+    }
+    //13.  문제 :아래  fruits 배열을  거꾸로 순서대로 한 새로운 배열을 만드시오
+    {
+      let fruits = ["자두", "복숭아", "포도"];
+      let reverseFruits=fruits.reverse();
+    }
+  </script>
+</body>
+</html>

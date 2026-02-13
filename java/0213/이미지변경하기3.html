@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function change(){
+            //alert("dkfdkdjf");
+
+            const area = document.querySelector(".area");
+            console.log( area);
+            area.innerHTML="";
+            
+            area.style.width="500px";
+            area.style.height="250px";
+
+            area.style.backgroundImage="url(https://biz.chosun.com/resizer/4KitDJw-0gRIu3jMi2liVbrO6jc=/581x276/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosunbiz/G2U4W2SD6VDCLIX762MW5HWGPY.png)";
+            area.style.backgroundPosition="center";
+            area.style.backgroundSize="cover"; 
+        }
+    </script>
+
+
+<style>
+    .box{
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+
+
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb4kDUv6mEauodomCYkJuvgUTsn65VBfqBFA&s);
+        background-size: cover;
+        background-position: center;
+
+    }
+</style>
+</head>
+<body>
+    
+
+    <div class="area"  >
+         올때
+    </div>
+
+    <button onclick="change()"> 클릭해봐 !</button>
+
+    <div class="box"></div>
+
+
+</body>
+</html>

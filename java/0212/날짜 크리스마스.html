@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let today = new Date();//현재날짜
+    let Xmas=new Date(2026,11,25); //특정 날짜, 주의사항 월은 -1하기
+
+    //날짜 차이
+    let d =Xmas-today;
+    console.log(d); //밀리초
+
+    //1시간 = 1 x 60 x60
+
+    let s= d/60*60*24;
+
+    alert(s)
+
+    alert(Math.ceil(3,4));
+
+</script>
+</body>
+</html>

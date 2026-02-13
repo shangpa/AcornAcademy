@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //자바 스크립트가 제공하는 내장객체 (math-> 수학관련기능제공, Date-> 날짜에관한 기능제공)
+    //String 문자열에 관련된 기능제공
+
+    //1 날짜 현재날짜 구하기
+    let current = new Date();
+
+    console.log(current)
+
+    //년도 구하기
+    //월  구하기
+    //일  구하기
+    //요일  구하기 기능 제공 함
+    let year  =current.getFullYear();
+    console.log( year);
+    let month  = current.getMonth();
+    console.log( month +1) ;   // 0월부터로 제공됨    +1 해서 사용해야함
+    let date = current.getDate();  //  12
+    console.log(date);
+
+    let day = current.getDay();
+    console.log( day);  // 일 0 , 월 1, 화2 , 수3 , 목4, 금5, 토 6  =>요일의 순번을 반환함
+
+    let 요일=["일요일","월" ,"화","수" ,"목" ,"금","토"];
+    console.log( 요일[day]);
+</script>
+</body>
+</html>
